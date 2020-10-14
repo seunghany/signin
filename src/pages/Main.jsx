@@ -1,5 +1,6 @@
 import React from 'react'
-import {SignInSide, Signup, Home} from '../components'
+import {SignInSide, Signup} from '../components/user'
+import {Home} from '../components'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 const Main = () => <>
