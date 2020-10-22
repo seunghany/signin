@@ -74,6 +74,7 @@ const Signup = () => {
                 autoFocus
               />
             </Grid>
+
             <Grid item xs={12} sm={6}>
               <TextField
                 variant="outlined"
@@ -85,17 +86,19 @@ const Signup = () => {
                 autoComplete="lname"
               />
             </Grid>
+
             <Grid item xs={12}>
               <TextField
                 variant="outlined"
                 required
                 fullWidth
-                id="email"
-                label="Email Address"
-                name="email"
-                autoComplete="email"
+                id="userid"
+                label="Username"
+                name="userid"
+                autoComplete="userid"
               />
             </Grid>
+
             <Grid item xs={12}>
               <TextField
                 variant="outlined"
@@ -108,12 +111,39 @@ const Signup = () => {
                 autoComplete="current-password"
               />
             </Grid>
+
             <Grid item xs={12}>
+              <TextField
+                variant="outlined"
+                required
+                fullWidth
+                name="gender"
+                label="Gender" // 이게 화면에 보이는거임
+                type="gender"
+                id="gender"
+                autoComplete="current-gender"
+              />
+            </Grid>
+
+            <Grid item xs={12}>
+              <TextField
+                variant="outlined"
+                required
+                fullWidth
+                name="age"
+                label="Age"
+                type="age"
+                id="age"
+                autoComplete="current-age"
+              />
+            </Grid>
+
+            {/* <Grid item xs={12}>
               <FormControlLabel
                 control={<Checkbox value="allowExtraEmails" color="primary" />}
                 label="I want to receive inspiration, marketing promotions and updates via email."
               />
-            </Grid>
+            </Grid> */}
           </Grid>
           <Button
             type="submit"
